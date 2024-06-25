@@ -42,10 +42,6 @@ const Dashboard = () => {
                             </li>
                         </>
                     }
-
-
-
-
                     <div className="divider"></div>
                     <li><NavLink to="/"><FaHome></FaHome> Home</NavLink> </li>
                     <li><NavLink to="/menu"> Our Menu</NavLink></li>

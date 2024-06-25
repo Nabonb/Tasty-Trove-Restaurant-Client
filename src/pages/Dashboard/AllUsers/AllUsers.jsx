@@ -13,7 +13,7 @@ const AllUsers = () => {
     })
 
     const handleMakeAdmin = user =>{
-        fetch(`http://localhost:5000/users/admin/${user._id}`, {
+        fetch(`https://tasty-trove-restaurant-server.vercel.app/users/admin/${user._id}`, {
             method: 'PATCH'
         })
         .then(res => res.json())
@@ -33,7 +33,9 @@ const AllUsers = () => {
     }
 
     const handleDelete = user => {
-
+        fetch(`https://tasty-trove-restaurant-server.vercel.app/users/admin/${user.email}`,{
+            method:"DELETE"
+        })
     }
 
     return (
